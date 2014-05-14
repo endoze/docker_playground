@@ -1,0 +1,7 @@
+development: &DEV
+  adapter: mysql2
+  database: docker_rails
+  username: root
+  password:
+  host: <%= ENV['DB_PORT_3306_TCP_ADDR'] %>
+  port: <%= ENV['DB_PORT_3306_TCP_PORT'] %>
